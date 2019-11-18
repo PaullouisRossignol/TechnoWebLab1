@@ -10,7 +10,7 @@ const serverHandle = function (req, res) {
   const path = route.pathname 
   const params = qs.parse(route.query)
   var content = '';
-  if (path === '/hello' && 'name' in params ) {
+  if (path === '/index' && 'name' in params ) {
       if(params['name'] === 'PL') {
           content = 'Hello PL, You are our favorite user !';
       }
@@ -23,7 +23,7 @@ const serverHandle = function (req, res) {
   if( !('name' in params) )
   {
       res.writeHead(404, {'Content-Type': 'text/plain'});
-      res.write('Error 404, attended URL example: "http://localhost:8080/hello?name=yourname" ');
+      res.write('Error 404, attended URL example: "http://localhost:8080/index?name=yourname" ');
   }
   else
   {
