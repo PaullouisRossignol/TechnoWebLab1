@@ -23,7 +23,7 @@ const serverHandle = function (req, res) {
   if( !('name' in params) )
   {
       res.writeHead(404, {'Content-Type': 'text/plain'});
-      res.write('Error, please specify a name');
+      res.write('Error 404, attended URL example: "http://localhost:8080/hello?name=yourname" ');
   }
   else
   {
@@ -31,13 +31,10 @@ const serverHandle = function (req, res) {
       res.write(content);
   }
   res.end();
-
 }
-
   const anotherFunction = function(){
     return true;
   }
- 
 module.exports = {
       serverHandle : serverHandle,
       anotherFunction : anotherFunction
