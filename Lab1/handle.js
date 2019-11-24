@@ -22,8 +22,8 @@ const serverHandle = function (req, res) {
   }
   if( !('name' in params) )
   {
-      res.writeHead(404, {'Content-Type': 'text/plain'});
-      res.write('Error 404, attended URL example: "http://localhost:8080/index?name=yourname" ');
+      res.writeHead(404, {'Content-Type': 'text/html'});
+      res.write('Error 404, attended URL example: <a href="http://localhost:1337/index?name=yourname">"http://localhost:1337/index?name=yourname"</a> ');
   }
   else
   {
