@@ -34,7 +34,7 @@ To use the Labs, follow these steps:
 ```
 npm run Main
 ```
-* Go to your favorite browser (except microsoft edge or explorer) and go to url : `http://localhost:1337`
+* Go to your favorite browser (except microsoft edge or explorer) and go to url : <http://localhost:1337>
 
 ## Contributors
 
